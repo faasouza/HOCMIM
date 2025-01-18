@@ -8,8 +8,6 @@ In the original paper, the mutual information implementation uses the regularize
 ## Features
 - Selects features based on conditional mutual information (CMI).
 - Supports high-order redundancy evaluations.
-- Option to use fast approximations based on Markov model assumptions.
-- Verbose output for tracking progress.
 
 ## Installation
 ### MATLAB
