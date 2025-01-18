@@ -25,7 +25,7 @@ pip install numpy scikit-learn
 
 ### MATLAB Function Signature
 ```matlab
-[S, tElapsed, CMIapp, par, Order] = pHOCMIMauto(X, Y, K, n, fast, verbose)
+[S, tElapsed, CMIapp, par, Order] = HOCMIM(X, Y, K, n, fast, verbose)
 ```
 
 #### Arguments
