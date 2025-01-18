@@ -1,6 +1,9 @@
 function [S, tElapsed, CMIapp, par, Order]  = pHOCMIMauto(X, Y, K, n, fast, verbose)
 % paralell implementation of HOCMIM
-% Code for paper pr2022_FranciscoSouza.tex
+% Code for [1] 
+% Francisco Souza, Cristiano Premebida, Rui Araújo,
+% High-order conditional mutual information maximization for dealing with high-order dependencies in feature selection,
+% Pattern Recognition, Volume 131, 2022,
 % Author: Francisco Alexandre
 % 
 % version 1.0
