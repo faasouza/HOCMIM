@@ -50,7 +50,7 @@ X = rand(100, 20); % 100 samples, 20 features
 Y = randi([0, 1], 100, 1); % Binary labels
 K = 5; % Select 5 features
 n = 3; % Third-order approximation 
-[S, tElapsed, CMIapp, par, Order] = pHOCMIMauto(X, Y, K, n, true, true);
+[S, tElapsed, CMIapp, par, Order] = HOCMIM(X, Y, K, n, true, true);
 disp(S);
 ```
 
