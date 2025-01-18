@@ -64,7 +64,7 @@ Francisco Souza, Cristiano Premebida, Rui Araújo, "High-order conditional mutua
 ```
 
 ## References
-1. Francisco Souza, Cristiano Premebida, Rui Araújo, "High-order conditional mutual information maximization for dealing with high-order dependencies in feature selection," *Pattern Recognition*, Volume 131, 2022.
+1. Francisco Souza, Cristiano Premebida, Rui Araújo, "High-order conditional mutual information maximization for dealing with high-order dependencies in feature selection," *Pattern Recognition*, Volume 131, 2022. https://www.sciencedirect.com/science/article/pii/S0031320322003764
 
 ## License
 This project is licensed under the MIT License. 
