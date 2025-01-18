@@ -32,7 +32,7 @@ pip install numpy scikit-learn
   - `N`: Number of features.
 - **Y**: Target labels (vector of size M x 1).
 - **K**: Number of features to select.
-- **n**: Order of HOCMIM approximation.
+- **n**: Max. order of HOCMIM approximation.
 - **fast**: Boolean, use fast approximation (default: `false`).
 - **verbose**: Boolean, display verbose output (default: `false`).
 
@@ -49,14 +49,14 @@ pip install numpy scikit-learn
 X = rand(100, 20); % 100 samples, 20 features
 Y = randi([0, 1], 100, 1); % Binary labels
 K = 5; % Select 5 features
-n = 3; % Third-order approximation
+n = 3; % Third-order approximation 
 [S, tElapsed, CMIapp, par, Order] = pHOCMIMauto(X, Y, K, n, true, true);
 disp(S);
 ```
 
 ### Python Function Signature
 ```python
-selected, elapsed_time, cmi_app, order = phocmim_auto(X, Y, K, n, verbose=False)
+selected, elapsed_time, cmi_app, order = hocmim(X, Y, K, n, verbose=False)
 ```
 
 #### Arguments
