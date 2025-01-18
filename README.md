@@ -114,6 +114,6 @@ Francisco Souza, Cristiano Premebida, Rui Araújo, "High-order conditional mutua
 ## References
 1. Francisco Souza, Cristiano Premebida, Rui Araújo, "High-order conditional mutual information maximization for dealing with high-order dependencies in feature selection," *Pattern Recognition*, Volume 131, 2022.
 2. K. Sechidis et al., "Efficient feature selection using shrinkage estimators," *Machine Learning Journal*, 2019. github: https://github.com/sechidis/2019-MLJ-Efficient-feature-selection-using-shrinkage-estimators
-3. 
+
 ## License
 This project is licensed under the MIT License.
