@@ -2,7 +2,7 @@
 
 This repository contains implementations of the **High-order Conditional Mutual Information Maximization (HOCMIM)** algorithm for feature selection in both MATLAB and Python. The code is designed to handle datasets with high-order dependencies effectively and includes a parallelized implementation for efficiency.
 
-In the original paper, the mutual information implementation uses the regularized approach from [2], which provides better accuracy due to improved estimation in high-dimensional scenarios. You can follow the authors' repository to enable their estimator in HOCMIM. The link is available in the reference section. However, the MIToolbox and default scikit works relativelly well for 5 dimensions, and a `high´ number of examples (>1000).
+In the original paper, the mutual information implementation uses the regularized approach from [2], which provides better accuracy due to improved estimation in high-dimensional scenarios. You can follow the authors' repository to enable their estimator in HOCMIM. The link is available in the reference section. However, the MIToolbox and default scikit works relativelly well for 5th order approximation, and a `high´ number of examples (>1000).
 
 
 ## Features
@@ -32,7 +32,7 @@ pip install numpy scikit-learn
   - `N`: Number of features.
 - **Y**: Target labels (vector of size M x 1).
 - **K**: Number of features to select.
-- **n**: Max. order of HOCMIM approximation.
+- **n**: Maximum order for HOCMIM approximation.
 - **fast**: Boolean, use fast approximation (default: `false`).
 - **verbose**: Boolean, display verbose output (default: `false`).
 
@@ -41,7 +41,7 @@ pip install numpy scikit-learn
 - **tElapsed**: Time taken for execution.
 - **CMIapp**: CMI approximation for each selected feature.
 - **par**: Struct containing additional output parameters.
-- **Order**: Selection order of the features.
+- **Order**: Selected order of HOCMIM approximation for the selected subset.
 
 #### MATLAB Example
 ```matlab
@@ -65,14 +65,14 @@ selected, elapsed_time, cmi_app, order = hocmim(X, Y, K, n, verbose=False)
   - `N`: Number of features.
 - **Y**: Target labels (NumPy array of size M).
 - **K**: Number of features to select.
-- **n**: Order of HOCMIM approximation.
+- **n**:  Maximum order for HOCMIM approximation.
 - **verbose**: Boolean, display verbose output (default: `False`).
 
 #### Outputs
 - **selected**: List of selected feature indices.
 - **elapsed_time**: Time taken for execution.
 - **cmi_app**: CMI approximation for each selected feature.
-- **order**: Selection order of the features.
+- **order**: Selected order of HOCMIM approximation for the selected subset.
 
 #### Python Example
 ```python
