@@ -1,4 +1,4 @@
-function [S, tElapsed, CMIapp, par, Order] = pHOCMIMauto(X, Y, K, n, fast, verbose)
+function [S, tElapsed, CMIapp, par, Order] = HOCMIM(X, Y, K, n, fast, verbose)
     % Parallel implementation of HOCMIM feature selection
     % Author: Francisco Alexandre
     % Date: 11/2020, Version: 1.0
